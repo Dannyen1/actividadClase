@@ -1,0 +1,123 @@
+<!-- 
+  html -> lenguaje de marcado de hipertexto
+  marcado -> ETIQUETAS (apertura y cierre)
+  hipertexto -> redirección a otras páginas de html
+ -->
+<!DOCTYPE html>
+<!-- 
+  lang -> lenguaje en el que está hecho nuestra página web
+ -->
+<html lang="en">
+<!-- HEAD -> CEREBRO DE MI PÁGINA -> 
+
+  Todo lo que necesitemos para que funcione nuestro sitio web, pero NO SE VEA
+
+  - LINKS -> Vinculan con mi .css, vinculan con .js
+  - METADADOS: -> enfocados en el posicionamiento SEO
+-->
+<head>
+  <!-- Permite que el navegador interprete caracteres especiales -->
+  <meta charset="UTF-8">
+  <!-- Permite que se pueda adaptar a diferentes pantallas -->
+  <meta name="author" content="Daniel Amado">
+  <meta name="keywords" content="Portfolio, Portafolio, Webdev">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Link a mis estilos -->
+  <!-- 
+      href -> donde especifico las rutas de mis estilos
+     -->
+     <link rel="stylesheet" href="./styles/index.css">
+ <!-- Link de mi favicon - logo en la pestaña del navegador-->
+ <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+  <!-- Link a mis íconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <title>Portfolio</title>
+
+</head>
+
+
+
+
+
+
+<body>
+  <!-- Hero section with video background -->
+
+   <!-- 
+    BODY -> Donde van nuestras etiquetas -> DONDE ESTRUCTURAMOS NUESTRO PROYECTO
+
+    lo que VEMOS de nuestro sitio web
+    -->
+
+
+  <!-- Inicio encabezado de mi página -->
+  
+
+  <!-- Navigation bar -->
+  
+
+  <header class="hero">
+    <h1>Daniel Amado</h1>
+    <p>Web Developer</p>
+    <div class="hero-image">
+      <img src="./assets/Web picture.jpg" alt="Your Image">
+    </div>
+    <!-- Video background -->
+    <video autoplay muted loop>
+      <source src="./assets/video.mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar">
+      <div class="container">
+        <img class="logo" src="./assets/logo.png" alt="logo">
+        <div class="menu">
+          <div class="menu-text">
+            <span>HOME </span>
+            <span>ABOUT ME</span>
+            <span>PORTFOLIO</span>
+          </div>
+          <a href="#contact" class="contact-btn">CONTACT ME</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Projects section -->
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <!-- Repeat this for each project -->
+      <div class="project">
+        <img src="./assets/Web picture.jpg" alt="Project 1">
+        <div class="project-info">
+          <h3>Project 1</h3>
+          <p>Description of Project 1</p>
+        </div>
+        <img src="./assets/Web picture.jpg" alt="Project 1">
+        <div class="project-info">
+          <h3>Project 2</h3>
+          <p>Description of Project 2</p>
+        </div>
+      </div>
+      <!-- End repeat -->
+    </div>
+  </section>
+
+  <!-- Footer with social media links -->
+  <footer>
+    <ul class="social-links">
+    
+      <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="bi bi-facebook"></i></a>
+
+      <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+      
+      <a href="#"><i class="bi bi-whatsapp"></i></a>
+      
+    </ul>
+  </footer>
+</body>
+</html>
